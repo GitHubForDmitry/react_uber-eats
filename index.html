@@ -1,10 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"><script src="scripts/jquery.js"></script><script src="scripts/TweenMax.min.js"></script><title>React Uber eats</title><link href="/react_uber-eats/static/css/main.503ae752.chunk.css" rel="stylesheet"></head><style>#demo{color:#fff;position:relative;width:100vw;height:100vh;background-color:#000;margin:auto;overflow:hidden}#demo h3{position:absolute;font-family:Asap,sans-serif;font-weight:700;margin:0;padding:0;width:100%;text-align:center;visibility:hidden;font-size:120px;top:50%;left:50%;transform:translate(-50%,-50%)}</style><body><div id="demo"></div><a href="index.html" id="boxWrapper"><div class="boxBlack">U</div><div class="boxBlack">b</div><div class="boxBlack">e</div><div class="boxBlack">r</div><div></div><div>E</div><div>a</div><div>t</div><div>s</div></a><div id="root"></div><script>let body = document.querySelector("#root");
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"><script src="scripts/jquery.js"></script><script src="scripts/TweenMax.min.js"></script><title>React Uber eats</title><link href="/react_uber-eats/static/css/main.01c32a68.chunk.css" rel="stylesheet"></head><style>#demo{color:#fff;position:relative;width:100vw;height:100vh;background-color:#000;margin:auto;overflow:hidden}#demo h3{position:absolute;font-family:Asap,sans-serif;font-weight:700;margin:0;padding:0;width:100%;text-align:center;visibility:hidden;font-size:120px;top:50%;left:50%;transform:translate(-50%,-50%)}</style><body><div id="demo"></div><a href="index.html" id="boxWrapper"><div class="boxBlack">U</div><div class="boxBlack">b</div><div class="boxBlack">e</div><div class="boxBlack">r</div><div></div><div>E</div><div>a</div><div>t</div><div>s</div></a><div id="root"></div><script>let body = document.querySelector("#root");
     let demo = document.querySelector("#demo");
     window.addEventListener('DOMContentLoaded', (event) => {
       setInterval(function(){
         body.style.display = "block";
         demo.style.display = "none";
-      }, 4700);
+      }, 4900);
       body.style.display = "none";
       demo.style.display = "block";
     });
@@ -14,9 +14,9 @@
         letters = $("#boxWrapper div");
     tl.staggerFrom(letters, 0.5, {opacity:0, scale:0, rotation:-180}, 0.3)
         .staggerTo(letters, 0.3, {scale:0.8}, 0.3, 0.7);
-      TweenMax.fromTo(demo, 1, {x:0}, {x: window.innerWidth, delay:0})
+      TweenMax.fromTo(demo, 0.5, {x:0}, {x: window.innerWidth, delay:0})
 
-    }, 4000);
+    }, 4500);
 
     var container = $("#demo"),
         _sentenceEndExp = /(\.|\?|!)$/g; //regular expression to sense punctuation that indicates the end of a sentence so that we can adjust timing accordingly
